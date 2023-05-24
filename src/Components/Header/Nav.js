@@ -15,7 +15,7 @@ const Nav = () => {
              <li><Link to ="/Hollywood" className='nav_link'>Hollywood</Link></li>
              <li><Link to ="/Fitness" className='nav_link'>Fitness</Link></li>
              <li><Link to ="/Food" className='nav_link'>Food</Link></li>
-             {/* <li><Link to ="/Article" className='nav_link'>Article</Link></li> */}
+             <li><Link to ="/Article" className='nav_link'>Article</Link></li>
          </ul>
      </div>
     

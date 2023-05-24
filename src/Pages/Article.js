@@ -26,6 +26,7 @@ function Article() {
         <div key={index}>
         <div className='article_div'>
         <h1>{value.title}</h1>
+        console.log("Article is called");
 
         <div className='article_img'>
        

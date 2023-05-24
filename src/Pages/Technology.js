@@ -4,7 +4,7 @@ import {Link } from 'react-router-dom'
 
 
 function Technology() {
-  const [details, setDetails] = useContext(store)
+  const [details,setDetails] = useContext(store)
   console.log(details)
   return (
     <div>

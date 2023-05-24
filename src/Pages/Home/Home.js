@@ -10,41 +10,40 @@ function Home() {
       <div className="TopPoster__div">
         <div className="TopPoster__big">
           <img
-            src={"https://wallpapercave.com/wp/wp8544430.jpg"}
+            src={"home_img/tree.jpg"}
             width={500}
             height={450}
             alt={"image not found"}
           />
           <p>
-            <span>Fort - </span>
-            <span>Raigad...</span>
+            <span>Nature beauty... </span>
+            
           </p>
         </div>
         <div className="TopPoster__small">
           <img
             src={
-              "https://assets.cntraveller.in/photos/61266a6bce6a07f2ba18d750/master/w_1600,c_limit/Lohagad.jpg"
+              "home_img/tree.jpg"
             }
             width={250}
             height={220}
             alt={"image not found"}
           />
           <p>
-            <span>Fort - </span>
-            <span>Lohgad...</span>
+            <span>Nature...</span>
           </p>
 
           <img
             src={
-              "https://assets.cntraveller.in/photos/61266e7f15e6c3223c8901cc/master/w_1600,c_limit/T4P740.jpg"
+              "home_img/sunshine.jpg"
             }
             width={250}
             height={220}
             alt={"image not found"}
           />
           <p>
-            <span>Fort - </span>
-            <span>Sindhudurg...</span>
+            <span>Nature... </span>
+            
           </p>
         </div>
       </div>
@@ -88,6 +87,7 @@ function Home() {
 
       <div className="Hollywood-div-latest-add">
         <div>
+          console.log({setDetails});
           {details
             .filter((val) => {
               return val.subcat === "Hollywood";
@@ -100,7 +100,6 @@ function Home() {
                 <p className="Hollywood_latest_p"> <span>{value.title}:</span>
                   &nbsp; &nbsp;&nbsp;
                 <span>{value.description.slice(0,60)}</span> </p> 
-                  {/* <p>{value.description.slice(1,150)}</p> */}
                 </div>
               </div>
             ))}
@@ -168,7 +167,6 @@ function Home() {
             </div>
           ))}
       </div>
-
 
     </div>
   );

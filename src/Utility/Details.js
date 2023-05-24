@@ -3,47 +3,47 @@ import React, { createContext, useState } from 'react'
 export const store = createContext()
 
 const Details = (props) => {
-  const [details, setDetails] = useState([
+  const [details , setDetails] = useState([
     {
-      "id": 1,
-      "title": "Sunshine",
-      "Image": "home_img/sunshine.jpg",
-      "category": "Nature",
-      "description": "Are you a travelholic looking for an exciting road trip? Look no further! From stunning mountain views to serene coastlines, these six picturesque road trip destinations are sure to provide you with the perfect getaway."
+      id: 1,
+      title: "Sunshine",
+      Image: "home_img/sunshine.jpg",
+      category: "Nature",
+      description: "Are you a travelholic looking for an exciting road trip? Look no further! From stunning mountain views to serene coastlines, these six picturesque road trip destinations are sure to provide you with the perfect getaway."
     },
     {
-      "id": 2,
-      "title": "Nature",
-      "Image": "home_img/nature.jpg",
-      "category": "Nature",
-      "description": "Are you a travelholic looking for an exciting road trip? Look no further! From stunning mountain views to serene coastlines, these six picturesque road trip destinations are sure to provide you with the perfect getaway."
+      id: 2,
+      title: "Nature",
+      Image: "home_img/nature.jpg",
+      category: "Nature",
+      description: "Are you a travelholic looking for an exciting road trip? Look no further! From stunning mountain views to serene coastlines, these six picturesque road trip destinations are sure to provide you with the perfect getaway."
     },
     {
-      "id": 3,
-      "title": "Wildlife",
-      "Image": "home_img/cheetah.jpg",
-      "category": "Nature",
+      id: 3,
+      title: "Wildlife",
+      Image: "home_img/cheetah.jpg",
+     category: "Nature",
       "description": "Are you a travelholic looking for an exciting road trip? Look no further! From stunning mountain views to serene coastlines, these six picturesque road trip destinations are sure to provide you with the perfect getaway."
     },
 
 
     {
-      "id": 4,
-      "title": "Akira",
-      "Image": "bollywood_img/akira.jpg",
-      "category": "Bollywood",
-      "Release": "Date",
-      "rating": "3.5/5",
-      "description":"A gripping action thriller about a college girl Akira, who has grown up with the ideals of being self reliant. Her life spirals out of control when she becomes unwittingly involved in a crime involving four corrupt police officers."
+      id: 4,
+      title: "Akira",
+      Image: "bollywood_img/akira.jpg",
+     category: "Bollywood",
+      Release : "Date",
+      rating: "3.5/5",
+      description:"A gripping action thriller about a college girl Akira, who has grown up with the ideals of being self reliant. Her life spirals out of control when she becomes unwittingly involved in a crime involving four corrupt police officers."
     },
     {
-      "id": 5,
-      "title": "Chhalang",
-      "Image": "bollywood_img/chhalang.jpg",
-      "category": "Bollywood",
-      "Release":"Date",
-      "rating": "3.0/5",
-      "description": "Chhalaang is a hilarious yet inspiring journey by Montu."
+      id: 5,
+      title: "Chhalang",
+      Image: "bollywood_img/chhalang.jpg",
+      category: "Bollywood",
+      Release:"Date",
+      rating: "3.0/5",
+      description: "Chhalaang is a hilarious yet inspiring journey by Montu."
     },
     {
       "id": 6,
@@ -319,204 +319,204 @@ const Details = (props) => {
     "title": "Calisthenics",
     "Image":"fitness_img/calisthenics.jpg",
     "category": "Fitness",
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
     
   {
-    "id": 41,
-    "title": "Aerobic Exercise",
-    "Image":"fitness_img/exercise.jpg",
-    "category": "Fitness",
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    id: 41,
+    title: "Aerobic Exercise",
+    Image:"fitness_img/exercise.jpg",
+    category: "Fitness",
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 42,
-    "title": "Fitness Games",
-    "Image":"fitness_img/fitnessgame.jpg",
-    "category": "Fitness",
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    id: 42,
+    title: "Fitness Games",
+    Image:"fitness_img/fitnessgame.jpg",
+    category: "Fitness",
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 43,
-    "title": "Lunge Exercise",
-    "Image":"fitness_img/lunge.jpg",
-    "category": "Fitness",
-    "subcat":"Fitness",
+    id: 43,
+    title: "Lunge Exercise",
+    Image:"fitness_img/lunge.jpg",
+    category: "Fitness",
+    subcat:"Fitness",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 44,
-    "title": "Planck Exercise",
-    "Image":"fitness_img/plank.jpg",
-    "category": "Fitness",
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    id: 44,
+    title: "Planck Exercise",
+    Image:"fitness_img/plank.jpg",
+    category: "Fitness",
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 45,
-    "title": "Aerobic Exercise",
-    "Image":"fitness_img/exercise.jpg",
-    "category": "Fitness",
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    id: 45,
+    title: "Aerobic Exercise",
+    Image:"fitness_img/exercise.jpg",
+    category: "Fitness",
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 46,
-    "title": "Aerobic Exercise",
-    "Image":"fitness_img/exercise.jpg", 
-    "category": "Fitness-Top",
-    "subcat":"Fitness",
+    id: 46,
+    title: "Aerobic Exercise",
+    Image:"fitness_img/exercise.jpg", 
+    category: "Fitness-Top",
+    subcat:"Fitness",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 47,
-    "title": "Planck Exercise",
-    "Image":"fitness_img/plank.jpg",
-    "category": "Fitness-Top",
-    "subcat":"Fitness",
+    id: 47,
+    title: "Planck Exercise",
+    Image:"fitness_img/plank.jpg",
+    category: "Fitness-Top",
+    subcat:"Fitness",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 48,
-    "title": "Lunge Exercise",
-    "Image":"fitness_img/lunge.jpg", 
-    "category": "Fitness-Top",
-    "subcat":"Fitness",
+    id: 48,
+    title: "Lunge Exercise",
+    Image:"fitness_img/lunge.jpg", 
+    category: "Fitness-Top",
+    subcat:"Fitness",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 49,
-    "title": "Fitness Games",
-    "Image":"fitness_img/fitnessgame.jpg",
-    "category": "Fitness-Top",
-    "subcat":"Fitness",
+    id: 49,
+    title: "Fitness Games",
+    Image:"fitness_img/fitnessgame.jpg",
+    category: "Fitness-Top",
+    subcat:"Fitness",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-  "id": 50,
-  "title": "Calisthenics",
-  "Image":"fitness_img/calisthenics.jpg",
-   "category": "Fitness-Top",
-    "subcat":"Fitness",
+    id: 50,
+    title: "Calisthenics",
+    Image:"fitness_img/calisthenics.jpg",
+    category: "Fitness-Top",
+    subcat:"Fitness",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 51,
-    "title": "Jumbo Thali",
-    "Image":"food_img/indian.jpg",
-    "category": "Food",
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    id: 51,
+    title: "Jumbo Thali",
+    Image:"food_img/indian.jpg",
+    category: "Food",
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 52,
-    "title": "FISH",
-    "Image":"food_img/kerala_fish.jpeg",
-    "category": "Food-Top",
-    "subcat":"Food",
+    id: 52,
+    title: "FISH",
+    Image:"food_img/kerala_fish.jpeg",
+    category: "Food-Top",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
  
   {
-    "id": 53,
-    "title": "Mughalai Chicken",
-    "Image":"food_img/mughalai_chicken.jpg",
-    "category": "Food",
-    "subcat":"Food",
+    id: 53,
+    title: "Mughalai Chicken",
+    Image:"food_img/mughalai_chicken.jpg",
+    category: "Food",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 54,
-    "title": "Patra",
-    "Image":"food_img/patra.jpg",
-    "category": "Food-Top",
-    "subcat":"Food",
+    id: 54,
+    title: "Patra",
+    Image:"food_img/patra.jpg",
+    category: "Food-Top",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 55,
-    "title": "Poha",
-    "Image":"food_img/poha.jpg",
-    "category": "Food-Top",
-    "subcat":"Food",
+    id: 55,
+    title: "Poha",
+    Image:"food_img/poha.jpg",
+    category: "Food-Top",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 56,
-    "title": "Samosa",
-    "Image":"food_img/samosa.jpeg",
-    "category": "Food-Top",
-    "subcat":"Food",
+    id: 56,
+    title: "Samosa",
+    Image:"food_img/samosa.jpeg",
+    category: "Food-Top",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 57,
-    "title": "Maharashtrian Thali",
-    "Image":"food_img/thali.jpg",
-    "category": "Food-Top",
-    "subcat":"Food",
+    id: 57,
+    title: "Maharashtrian Thali",
+    Image:"food_img/thali.jpg",
+    category: "Food-Top",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 58,
-    "title": "Patra",
-    "Image":"food_img/patra.jpg",
-    "category": "Food",
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    id: 58,
+    title: "Patra",
+    Image:"food_img/patra.jpg",
+    category: "Food",
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 59,
-    "title": "Maharashtrian Thali",
-    "Image":"food_img/thali.jpg",
-    "category": "Food-Top",
-    "subcat":"Food",
+    id: 59,
+    title: "Maharashtrian Thali",
+    Image:"food_img/thali.jpg",
+    category: "Food-Top",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 60,
-    "title": "Jumbo Thali",
-    "Image":"food_img/indian.jpg",
-    "category": "Food-Top",
-    "subcat":"Food",
+    id: 60,
+    title: "Jumbo Thali",
+    Image:"food_img/indian.jpg",
+    category: "Food-Top",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 61,
-    "title": "Idali",
-    "Image":"food_img/idali.jpg",
-    "category": "Food-Top",
-    "subcat":"Food",
+    id: 61,
+    title: "Idali",
+    Image:"food_img/idali.jpg",
+    category: "Food-Top",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 62,
-    "title": "Chhole",
-    "Image":"food_img/chhole.jpg",
-    "category": "Food",
-    "subcat":"Food",
+    id: 62,
+    title: "Chhole",
+    Image:"food_img/chhole.jpg",
+    category: "Food",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
   {
-    "id": 63,
-    "title": "Maharashtrian Thali",
-    "Image":"food_img/thali.jpg",
-    "category": "Food",
-    "subcat":"Food",
+    id: 63,
+    title: "Maharashtrian Thali",
+    Image:"food_img/thali.jpg",
+    category: "Food",
+    subcat:"Food",
 
-    "description":"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
+    description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
 
  

@@ -6,7 +6,7 @@ import Technology from '../Pages/Technology'
 import Hollywood from '../Pages/Hollywood'
 import Fitness from '../Pages/Fitness'
 import Food from '../Pages/Food'
-import Article from '../Pages/Article'
+// import Article from '../Pages/Article'
 
 function RouteComp() {
   return (
@@ -18,7 +18,7 @@ function RouteComp() {
             <Route path="/Hollywood" element={<Hollywood/>}/>
             <Route path="/Fitness" element={<Fitness/>}/>
             <Route path="/Food" element={<Food/>}/>
-         <Route path="/article/:Id" element={<Article/>} />
+         {/* <Route path="/article/:Id" element={<Article/>} /> */}
         </Routes>
     </div>
   )
