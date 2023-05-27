@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
-  const [details, setDetails] = useContext(store);
+  const [details] = useContext(store);
   return (
     <div className="main_common">
       <div className="TopPoster__div">
@@ -87,7 +87,6 @@ function Home() {
 
       <div className="Hollywood-div-latest-add">
         <div>
-          console.log({setDetails});
           {details
             .filter((val) => {
               return val.subcat === "Hollywood";
