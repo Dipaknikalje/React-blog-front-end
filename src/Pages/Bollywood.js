@@ -3,7 +3,7 @@ import {store} from '../Utility/Details'
 import {Link } from 'react-router-dom'
 
 function Bollywood() {  
-  const [details, setDetails] = useContext(store)
+  const [details] = useContext(store)
   // console.log(details)
   return (
     <div>
@@ -20,7 +20,7 @@ function Bollywood() {
             <div>
             <Link
                 to={`/article/${value.id}`}>
-            <img src={value.Image} width={300} height={300} alt={"image not found"}/></Link>
+            <img src={value.Image} width={300} height={300} alt={"img not found"}/></Link>
             </div>
             <div className='description_div'>
               <p className='bolly_title'>{value.title}</p>
@@ -54,7 +54,7 @@ function Bollywood() {
 
             <div >
               <Link to={`/article/${value.id}`}>
-            <img src={value.Image} width={150} height={150} alt={"image not found"}/></Link>
+            <img src={value.Image} width={150} height={150} alt={"img not found"}/></Link>
             </div>
 
             <div>

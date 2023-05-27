@@ -13,7 +13,7 @@ function Home() {
             src={"home_img/tree.jpg"}
             width={500}
             height={450}
-            alt={"image not found"}
+            alt={"img not found"}
           />
           <p>
             <span>Nature beauty... </span>
@@ -27,7 +27,7 @@ function Home() {
             }
             width={250}
             height={220}
-            alt={"image not found"}
+            alt={"img not found"}
           />
           <p>
             <span>Nature...</span>
@@ -39,7 +39,7 @@ function Home() {
             }
             width={250}
             height={220}
-            alt={"image not found"}
+            alt={"img not found"}
           />
           <p>
             <span>Nature... </span>
@@ -58,7 +58,7 @@ function Home() {
             <div key={index}>
               <div >
               <Link to={`/article/${value.id}`}>
-                <img src={value.Image} width={200} height={200} alt={"image not found"}/></Link>
+                <img src={value.Image} width={200} height={200} alt={"img not found"}/></Link>
                 <p>{value.title}</p>
               </div>
             </div>
@@ -76,7 +76,7 @@ function Home() {
             <div key={index}>
               <div >
               <Link to={`/article/${value.id}`}>
-              <img src={value.Image} width={200} height={200} alt={"image not found"}/></Link>
+              <img src={value.Image} width={200} height={200} alt={"img not found"}/></Link>
                 <p>{value.title}</p>    
                          </div>
             </div>
@@ -96,7 +96,7 @@ function Home() {
               <div key={index}>
                 <div className="Hollywood_latest" >
                 <Link to={`/article/${value.id}`}>
-                <img src={value.Image} width={200} height={200} alt={"image not found"}/></Link>
+                <img src={value.Image} width={200} height={200} alt={"img not found"}/></Link>
                 <p className="Hollywood_latest_p"> <span>{value.title}:</span>
                   &nbsp; &nbsp;&nbsp;
                 <span>{value.description.slice(0,60)}</span> </p> 
@@ -123,7 +123,7 @@ function Home() {
               <div >
               <Link to={`/article/${value.id}`} >
 
-              <img src={value.Image} width={200} height={200} alt={"image not found"}/></Link>
+              <img src={value.Image} width={200} height={200} alt={"img not found"}/></Link>
                 <p>{value.title}</p>
               </div>
             </div>
@@ -141,7 +141,7 @@ function Home() {
             <div key={index}>
               <div >
               <Link to={`/article/${value.id}`}>
-              <img src={value.Image} width={200} height={200} alt={"image not found"} /></Link>
+              <img src={value.Image} width={200} height={200} alt={"img not found"} /></Link>
 
                 <p>{value.title}</p>
               </div>
@@ -160,7 +160,7 @@ function Home() {
             <div  key={index}>
               <div>
                 <Link to={`/article/${value.id}`}>
-                <img src={value.Image} width={200} height={200} alt={"image not found"}/></Link>
+                <img src={value.Image} width={200} height={200} alt={"img not found"}/></Link>
 
                 <p>{value.title}</p>
               </div>
