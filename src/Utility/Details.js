@@ -312,8 +312,7 @@ const Details = (props) => {
     subcat:"Technology",
     description:"lorem epsun lorem epsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt animi accusamus quibusdam quisquam nam itaque natus voluptatem quaerat delectus omnis aliquid adipisci consectetur asperiores, consequatur, vel, tempore labore fuga?"
   },
-  ,
-
+    
   {
     id: 40,
     title: "Calisthenics",
