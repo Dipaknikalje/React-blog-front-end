@@ -21,8 +21,29 @@
 p{
     padding:10px;
 }
-.fab fa-facebook-f{
-    background-color: #3b5998;
-    href:"#!" ;
-    role:"button";
+@media only screen and (max-width: 1000px){
+    .footer_bar{
+        width: 550px;
+      border: 15px solid #10e1e1;
+      padding: 100px;
+      margin: 20px;
+      background: rgb(3, 132, 184);
+      color:white;
+      font-size: larger;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-self: center;
+    
+    }
+    .footer_bar_contact{
+        padding-right:50px;
+    }
+    .footer_bar_about{
+        padding-right: 50px;
+    }
+    p{
+        padding:5px;
+    }
+
 }
