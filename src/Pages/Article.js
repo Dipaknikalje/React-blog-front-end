@@ -1,69 +1,78 @@
-import React from 'react'
-import { useContext } from "react";
+// import React from "react";
+// import { useContext } from "react";
+// import { useParams, Link } from "react-router-dom";
+// import { store } from "../Utility/details";
+// import DisplayIcon from "../Components/Footer/DisplayIcon";
+import React, { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
-import {store} from '../Utility/Details'
-
+import { store } from "../Utility/Details";
+import DisplayIcon from "../Components/Footer/DisplayIcon";
 
 function Article() {
-
-  const [Details] = useContext(store);
+  const [details] = useContext(store);
   var { Id } = useParams();
   Id = +Id;
   var newCategory;
-  for (var i = 0; i < Details.length; i++) {
-    if (Details[i].id === Id) {
-      newCategory = Details[i].category;
+  console.log(details);
+  for (var i = 0; i < details.length; i++) {
+    if (details[i].id === Id) {
+      newCategory = details[i].category;
       break;
     }
   }
 
   return (
     <div>
- 
-     {
-      Details.filter((value)=> value.id === Id).map((value,index)=>(
-        <div key={index}>
-        <div className='article_div'>
-        <h1>{value.title}</h1>
-
-        <div className='article_img'>
-       
-          <img src={value.Image}  alt={"img not found"} width={400} height={400}/>
-        </div>
-
-
-        <div className='article_description'>
-          <p>{value.description}</p>
-        </div>
-
-        </div>
-        </div>
-      ))
-     }
-     <h2 className='moreh2'>More....</h2>
-    <div className='article_more_div'>
-      {
-        Details.filter((val)=> val.id !== Id && val.category ===newCategory).slice(0,3).map((value,index)=>
-        (
+      {details
+        .filter((val) => val.id === Id)
+        .map((value, index) => (
           <div key={index}>
-          <div >
-            <div>
-            <Link
-                to={`/article/${value.id}`}>
-            <img src={value.Image} height={250} width={250} alt={"img not found"}/></Link>
-            </div>
-            <div>
-            <p>{value.description.slice(0,120)}...</p>
+            <div className="article_div">
+              <DisplayIcon />
+              <h1>{value.title}</h1>
+
+              <div className="article_img">
+                <img
+                  src={value.Image}
+                  alt="img not found"
+                  width={400}
+                  height={400}
+                />
+              </div>
+
+              <div className="article_description">
+                <p>{value.description}</p>
+              </div>
             </div>
           </div>
-          </div>
-        ))
-      }
+        ))}
+      <h2 className="moreh2">More....</h2>
+      <div className="article_more_div">
+        {details
+          .filter((val) => val.id !== Id && val.category === newCategory)
+          .slice(0, 3)
+          .map((value, index) => (
+            <div key={index}>
+              <div>
+                <div>
+                  <Link to={`/article/${value.id}`}>
+                    <img
+                      src={value.Image}
+                      height={250}
+                      width={250}
+                      alt={"img not found"}
+                    />
+                  </Link>
+                </div>
+                <div>
+                  <p>{value.description.slice(0, 120)}...</p>
+                </div>
+              </div>
+            </div>
+          ))}
+      </div>
     </div>
-    </div>
-    
-  )
+  );
 }
 
-export default Article
-  
+export default Article;

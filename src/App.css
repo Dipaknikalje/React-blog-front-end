@@ -10,6 +10,10 @@ width: 100%;
 /* background: linear-gradient(pink,rgb(77, 153, 153)) no-repeat; */
 background-color: rgb(217, 231, 231);
 }
+.link_bolly{
+  text-decoration: none;
+  color:black
+}
 
 .Category_div{
   margin: 2rem;
@@ -84,7 +88,8 @@ img{
 .description_div{
 /* border: 1px solid red; */
 margin: 2rem;
-text-align: center;}
+text-align: center;
+}
 hr{
   margin: 10px;
   border: 1px solid rgb(121, 113, 113)

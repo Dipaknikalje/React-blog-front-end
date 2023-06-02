@@ -15,6 +15,10 @@
       flex-direction: row;
       justify-content: space-evenly;
   }
+  .TopPoster__big{
+    width:1000px;
+    height:600px;
+  }
   .TopPoster__big p{
     position: relative;
     bottom: 3rem;
@@ -118,3 +122,18 @@
       margin: 1rem 3rem;
     }
   }
+  .nav_morelink{
+    position:absolute;
+    Right:50px;
+    top:1500px;
+  }
+  .nav_morelink:hover{
+    color: red;
+}
+.nav_holmorelink:hover{
+  color: red;
+}
+.mainlink{
+  text-decoration: none;
+  color:black;
+}

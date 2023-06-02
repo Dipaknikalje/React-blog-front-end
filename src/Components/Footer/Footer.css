@@ -1,0 +1,28 @@
+.footer_bar{
+    width: 1400px;
+  border: 15px solid #10e1e1;
+  padding: 100px;
+  margin: 20px;
+  background: rgb(3, 132, 184);
+  color:white;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+
+}
+.footer_bar_contact{
+    padding-right:300px;
+}
+.footer_bar_about{
+    padding-right: 300px;
+}
+p{
+    padding:10px;
+}
+.fab fa-facebook-f{
+    background-color: #3b5998;
+    href:"#!" ;
+    role:"button";
+}

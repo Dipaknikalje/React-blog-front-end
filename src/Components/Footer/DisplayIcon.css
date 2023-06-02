@@ -1,0 +1,32 @@
+.icons_bar{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    /* right:100px;
+    top:5830px; */
+    padding-right:20px;
+}
+.icon_fb{
+    background:blue;
+    width: 30px;
+    height:30px;
+    color:white;
+}
+.icon_insta{
+    background:rgb(236, 109, 131);
+    width: 30px;
+    height:30px;
+    color:white;
+}
+.icon_twit{
+    background:blue;
+    width: 30px;
+    height:30px;
+    color:white;
+}
+.icon_youtube{
+    background:red;
+    width: 30px;
+    height:30px;
+    color:white;
+}
