@@ -27,7 +27,7 @@ function Bollywood() {
                 <div className="child_data_left_Side_Of_Category">
                   <div className="description_div">
                     <Link
-                      to={`/user/article/${value.id}`}
+                      to={`/article/${value.id}`}
                       className="link_bolly"
                     >
                       <img
@@ -67,7 +67,7 @@ function Bollywood() {
                 <div key={index}>
                   <div className="top_news_div">
                     <div>
-                      <Link to={`/user/article/${value.id}`}>
+                      <Link to={`/article/${value.id}`}>
                         <img
                           src={value.Image}
                           width={150}
