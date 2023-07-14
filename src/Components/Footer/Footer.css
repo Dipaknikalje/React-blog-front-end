@@ -23,27 +23,30 @@ p{
 }
 @media only screen and (max-width: 1000px){
     .footer_bar{
-        width: 550px;
+        width: 100vw;
       border: 15px solid #10e1e1;
       padding: 100px;
       margin: 20px;
       background: rgb(3, 132, 184);
       color:white;
-      font-size: larger;
+      font-size: medium;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
-      align-self: center;
+      align-items: center;
     
     }
     .footer_bar_contact{
-        padding-right:50px;
+        padding-right:10px;
+        font-size: small;
     }
     .footer_bar_about{
-        padding-right: 50px;
+        padding-right: 10px;
+        font-size: small;
     }
     p{
         padding:5px;
+        font-size: small;
     }
 
 }

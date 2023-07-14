@@ -7,8 +7,12 @@ import Hollywood from "../Pages/Hollywood";
 import Fitness from "../Pages/Fitness";
 import Food from "../Pages/Food";
 import Article from "../Pages/Article";
+import RegisterPage from "../Components/Authorisation/Register/RegisterPage";
+import LoginPage from "../Components/Authorisation/Buttons/Login/LoginPage";
+import Private from "./Private";
 
 function RouteComp() {
+  // const isLoggedIn=window.localStorage.getItem("loggedIn")
   return (
     <div>
       <Routes>
@@ -18,7 +22,10 @@ function RouteComp() {
         <Route path="/Hollywood" element={<Hollywood />} />
         <Route path="/Fitness" element={<Fitness />} />
         <Route path="/Food" element={<Food />} />
-        <Route path="/article/:Id" element={<Article />} />
+        <Route path="article/:Id" element={<Private Component={Article} />} />
+
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </div>
   );

@@ -1,34 +1,39 @@
-// import React from "react";
-// import { useContext } from "react";
-// import { useParams, Link } from "react-router-dom";
-// import { store } from "../Utility/details";
-// import DisplayIcon from "../Components/Footer/DisplayIcon";
-import React, { useContext } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { store } from "../Utility/Details";
 import DisplayIcon from "../Components/Footer/DisplayIcon";
+import axios from "axios";
+import "./Article.css";
 
 function Article() {
-  const [details] = useContext(store);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://node-backend-blog-project-f5vv.onrender.com/api/data")
+      .then((res) => {
+        setData(res.data);
+      });
+  });
   var { Id } = useParams();
   Id = +Id;
   var newCategory;
-  console.log(details);
-  for (var i = 0; i < details.length; i++) {
-    if (details[i].id === Id) {
-      newCategory = details[i].category;
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].id === Id) {
+      newCategory = data[i].category;
       break;
     }
   }
 
   return (
     <div>
-      {details
+      {data
         .filter((val) => val.id === Id)
         .map((value, index) => (
           <div key={index}>
             <div className="article_div">
-              <DisplayIcon />
+              <div className="icon">
+                <DisplayIcon />
+              </div>
               <h1>{value.title}</h1>
 
               <div className="article_img">
@@ -48,7 +53,7 @@ function Article() {
         ))}
       <h2 className="moreh2">More....</h2>
       <div className="article_more_div">
-        {details
+        {data
           .filter((val) => val.id !== Id && val.category === newCategory)
           .slice(0, 3)
           .map((value, index) => (

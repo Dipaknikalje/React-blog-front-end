@@ -1,16 +1,23 @@
-import React, { useContext } from "react";
-import { store } from "../Utility/Details";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Fitness() {
-  const [details] = useContext(store);
-  console.log(details);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://node-backend-blog-project-f5vv.onrender.com/api/data")
+      .then((res) => {
+        setData(res.data);
+      });
+  });
   return (
     <div>
       <h1 className="catagoryh1">Fitness</h1>
       <div className="Category_div">
         <div className="left_Side_Of_Category">
-          {details
+          {data
             .filter((val) => {
               return val.category === "Fitness";
             })
@@ -40,7 +47,7 @@ function Fitness() {
         <div className="right_Side_Of_Category">
           <div>
             <h1 className="catagoryh1">Top News</h1>
-            {details
+            {data
               .filter((val) => {
                 return val.subcat === "Fitness";
               })

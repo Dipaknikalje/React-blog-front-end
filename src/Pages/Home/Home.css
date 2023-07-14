@@ -19,6 +19,10 @@
     width:1000px;
     height:600px;
   }
+  .TopPoster__big img{
+    width:1000px;
+    height: 500px;
+  }
   .TopPoster__big p{
     position: relative;
     bottom: 3rem;
@@ -92,6 +96,10 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+    .TopPoster__big img{
+      width:700px;
+      height: 500px;
     }
   
     .common_latest{

@@ -1,19 +1,26 @@
-import React, { useContext } from "react";
-import { store } from "../../Utility/Details";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import axios from "axios";
 
 function Home() {
-  const [details] = useContext(store);
-  console.log(details);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://node-backend-blog-project-f5vv.onrender.com/api/data")
+      .then((res) => {
+        setData(res.data);
+      });
+  });
   return (
     <div className="main_common">
       <div className="TopPoster__div">
         <div className="TopPoster__big">
           <img
             src={"home_img/naturetree.jpg"}
-            width={1000}
-            height={500}
+            // width={1000}
+            // height={500}
             alt={"img not found"}
           />
           <p>
@@ -43,11 +50,10 @@ function Home() {
         </div>
       </div>
       <h2 className="home_h1">Latest Travel stories...</h2>
-
       <div className="common_latest">
-        {details
+        {data
           .filter((val) => {
-            return val.category === "Nature";
+            return val.category === "travel";
           })
           .map((value, index) => (
             <div key={index}>
@@ -72,7 +78,7 @@ function Home() {
 
       <h2 className="home_h1">Latest Bollywood stories...</h2>
       <div className="common_latest">
-        {details
+        {data
           .filter((val) => {
             return val.subcat === "Bollywood";
           })
@@ -101,8 +107,7 @@ function Home() {
 
       <div className="Hollywood-div-latest-add">
         <div>
-          {/* console.log({setDetails}); */}
-          {details
+          {data
             .filter((val) => {
               return val.subcat === "Hollywood";
             })
@@ -141,7 +146,7 @@ function Home() {
       <h2 className="home_h1">Latest Fitness stories...</h2>
 
       <div className="common_latest">
-        {details
+        {data
           .filter((val) => {
             return val.subcat === "Fitness";
           })
@@ -169,7 +174,7 @@ function Home() {
       <h2 className="home_h1">Latest Food stories...</h2>
 
       <div className="common_latest">
-        {details
+        {data
           .filter((val) => {
             return val.subcat === "Food";
           })
@@ -197,7 +202,7 @@ function Home() {
       <h2 className="home_h1">Latest Technology stories...</h2>
 
       <div className="common_latest">
-        {details
+        {data
           .filter((val) => {
             return val.subcat === "Technology";
           })

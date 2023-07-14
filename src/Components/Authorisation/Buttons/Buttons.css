@@ -1,0 +1,29 @@
+.btn-ctn{
+    width: 20%;
+    /* height: 100%; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 10px;
+    position:absolute;
+    right:0px;
+    top:100px;
+    text-decoration: none;
+}
+.btn{
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #FC774D;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid #FC774D;
+}
