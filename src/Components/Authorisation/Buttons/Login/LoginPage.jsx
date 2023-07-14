@@ -27,7 +27,6 @@ const LoginPage = () => {
     console.log(response.data)
     if(response.data.status==="success"){
       dispatch({type:"USER" , payload:true})
-      window.alert("login successfully")
       console.log(responseData)
       localStorage.setItem("token",response.data.token)
       localStorage.setItem("loggedIn", true)
